@@ -120,10 +120,14 @@ const App = () => {
               <Typography variant="h6" gutterBottom>
                 Letter Count:
               </Typography>
+              {/* check if the letterCount object is not empty. */}
               {Object.keys(letterCount).length > 0 ? (
                 <Box>
+                  {/* convert the letterCount object into an array of [key, value] pairs */}
                   {Object.entries(letterCount)
+                    // sort the array alphabetically by the letter
                     .sort()
+                    // map each [key, value] pair to a Box component displaying the letter and count
                     .map(([letter, count]) => (
                       <Box
                         key={letter}
@@ -141,9 +145,7 @@ const App = () => {
                       </Box>
                     ))}
                 </Box>
-              ) : (
-                <Typography>No text analyzed yet.</Typography>
-              )}
+              ) : null}
             </Paper>
           )}
         </Box>
