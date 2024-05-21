@@ -58,7 +58,7 @@ To deploy the application to an AWS S3 bucket, follow these steps:
 1. **Create an S3 Bucket:** In the AWS S3 console, create a new bucket and configure it for static website hosting.
 2. **Upload the Build Files:** Upload the contents of the build directory to the S3 bucket.
 3. **Set Permissions:** Ensure the files are publicly accessible by setting the appropriate bucket policy.
-4. **Automated Deployment with GitHub Actions:** The deployment process for this application automated using GitHub Actions. The workflow file located at .github/workflows/build-deploy.yaml is set up to build and deploy the application to an S3 bucket on every push to the main branch.
+4. **Automated Deployment with GitHub Actions:** The deployment process for this application automated using GitHub Actions. The workflow file located at `.github/workflows/build-deploy.yaml` is set up to build and deploy the application to an S3 bucket on every push to the main branch.
 
 # Getting Started with Create React App
 
