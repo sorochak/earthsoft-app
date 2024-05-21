@@ -1,3 +1,56 @@
+# EarthSoft Text Analyzer
+
+## Description
+
+EarthSoft Text Analyzer is a simple React web application that allows users to enter multiple sentences of text and analyzes the text to count the occurrences of each letter. The application is built using React and Material UI, and it provides an interface for text input and result display. The application is deployed to an S3 bucket and can be accessed [here](http://earthsoft-app.s3-website-us-east-1.amazonaws.com).
+
+## Assumptions
+
+1. **Character Limit**: Since the instruction was to allow users to enter multiple sentences of text, a 500 character limit was implemented. This decision was made to prevent users from entering an unspecified number of characters, which could affect the performance and usability of the application.
+
+## Installation and Running the Application Locally
+
+To run the EarthSoft Text Analyzer on your local machine, follow these steps:
+
+### Prerequisites
+
+- Node.js and npm installed on your machine. You can download Node.js from [here](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/sorochak/earthsoft-app.git
+   cd earthsoft-text-analyzer
+   ```
+
+2. **Install Dependencies**
+
+```bash
+   npm install
+```
+
+### Running the Application
+
+1. **Start the Development Server**
+
+```bash
+   npm start
+```
+
+This will start the development server and open the application in your default web browser. If it doesn't open automatically, navigate to http://localhost:3000 in your browser.
+
+### Building for Production
+
+1. **Build the Application**
+
+```bash
+   npm run build
+```
+
+This will create a build directory with the optimized production version of your app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
